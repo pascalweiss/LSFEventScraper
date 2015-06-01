@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS events;
+
+CREATE TABLE events (
+    id              VARCHAR(16),
+    begin           TIMESTAMP,
+    finish          TIMESTAMP,
+    title           VARCHAR(256),
+    event_link      VARCHAR(512),
+    campus          VARCHAR(32), 
+    building        VARCHAR(128),
+    room            VARCHAR(16),
+    room_link       VARCHAR(512),
+    student_group   VARCHAR(64),
+    lecturer VARCHAR(512)
+);
+

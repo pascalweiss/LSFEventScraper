@@ -1,0 +1,13 @@
+(select e1.room, e1.begin, e1.finish
+    from events e1
+    where date(e1.begin) = '2015-07-31'
+)
+except
+(select e2.room, e2.begin, e2.finish
+    from events e2
+        where e2.begin < '2015-07-31 12:05:00'
+        and
+        '2015-07-31 12:05:00' < e2.finish
+);
+
+(select e1.room, e1.begin, e1.finish from events e1 where date(e1.begin) = '2015-07-31') except (select e2.room, e2.begin, e2.finish from events e2 where e2.begin < '2015-07-31 12:05:00' and '2015-07-31 12:05:00' < e2.finish);
