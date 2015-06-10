@@ -1,0 +1,10 @@
+*.pyc
+prototype_query.txt
+.DS_Store
+log.txt
+log_failure.txt
+data_events/*
+data_cancels/*
+prototype_query
+
+

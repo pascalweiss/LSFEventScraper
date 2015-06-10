@@ -1,6 +1,4 @@
 __author__ = 'pascal'
-from datetime import datetime
-
 
 class LSFEvent:
     id = ''
@@ -14,3 +12,4 @@ class LSFEvent:
     room_link = ''
     student_group = ''
     lecturer = ''
+    cancel_note = ''

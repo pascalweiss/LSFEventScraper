@@ -11,6 +11,7 @@ CREATE TABLE events (
     room            VARCHAR(16),
     room_link       VARCHAR(512),
     student_group   VARCHAR(64),
-    lecturer VARCHAR(512)
+    lecturer        VARCHAR(512),
+    cancel_note     VARCHAR(512)
 );
 
