@@ -5,14 +5,13 @@ __author__ = 'pascal'
 from urllib import urlopen
 import time
 from threading import Thread
-from threading import active_count
 from glob import glob
 
 
 class LSFFetcher:
     _overview_url = ''
     _event_urls = []
-    simultaneous_threads = 5
+    simultaneous_threads = 10
 
     def add_overview_url(self, overview_url):
         self._overview_url = overview_url
