@@ -3,12 +3,12 @@ LSFEventScraper is a multithreaded Python scraper, that extracts all events of t
 
 # How it works
 Currently, HTW-Berlin.de has an semester-overview page, from where the crawler can reach a page for every day of the current semster.
-These day-overview pages are the source, from where every event of the semester can be extracted. What the module does is:
-• fetching the semester-overview
-• extracting all day-overview URLs
-• fetching all day-overviews
-• extracting every event
-• save the events to a database
+These day-overview pages are the source, from where every event of the semester can be extracted. What the module does is:<br>
+• fetching the semester-overview<br>
+• extracting all day-overview URLs<br>
+• fetching all day-overviews<br>
+• extracting every event<br>
+• save the events to a database<br>
 
 # Database Configuration
 LSFEventScraper can store the events to either MYSQL or PostgreSQL. If you want to use it with the corresponding HTWRoomFinder, you need to use PostgreSQL.
